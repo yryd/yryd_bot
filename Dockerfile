@@ -10,8 +10,6 @@ ADD . $MYPATH/yryd_run
 # 安装所需的包与依赖
 RUN pip install -r ./yryd_run/requirements.txt
 
-# Run app.py when the container launches
-#CMD ["python", "app.py"]
 EXPOSE 80
 EXPOSE 8080
 CMD /bin/bash
